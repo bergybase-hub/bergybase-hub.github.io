@@ -3,25 +3,25 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const slides = [
   {
-    subtitle: '— BergyBit —',
-    title: 'Your Idea, Our expertise',
-    description: 'Turning your visionary concepts into reality with our expert team of developers and strategists.',
+    subtitle: '— BERGYBIT —',
+    title: 'YOUR IDEA, OUR EXPERTISE',
+    description: 'We specialize in delivering  cutting-edge technology solutions tailored to your business needs.',
     image: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1920&q=80',
   },
   {
-    subtitle: '— BergyBit —',
-    title: 'Building tomorrow, Today',
-    description: 'Creating future-proof software solutions that keep your business ahead of the curve.',
-    image: 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=1920&q=80',
+    subtitle: '— BERGYBIT —',
+    title: 'BUILDING TOMORROW, TODAY!',
+    description: 'We create future-proof software solutions that keep your business ahead of the curve.',
+    image: 'https://plus.unsplash.com/premium_photo-1682141013747-5aed8665c154?q=80&w=2232&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   },
   {
-    subtitle: '— BergyBit —',
-    title: 'Empowering growth through technology',
-    description: 'Scalable and robust digital tools designed to accelerate your business growth.',
-    image: 'https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=1920&q=80',
+    subtitle: '— BERGYBIT —',
+    title: 'EMPOWERING GROWTH THROUGH TECHNOLOGY',
+    description: 'From small startups to large enterprises, we empower  organizations to unlock their full potential through cutting-edge technology solutions.',
+    image: 'https://images.unsplash.com/photo-1622675363311-3e1904dc1885?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   },
 ];
-
+// https://images.unsplash.com/photo-1528901166007-3784c7dd3653?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
 const Hero = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
@@ -71,7 +71,7 @@ const Hero = () => {
                 {slide.description}
               </p>
               
-              <div className="flex flex-col sm:flex-row justify-center gap-4">
+              {/* <div className="flex flex-col sm:flex-row justify-center gap-4">
                 <a
                   href="#contact"
                   className="px-8 py-3 rounded-full bg-accent-blue text-white font-bold text-lg hover:bg-opacity-90 transition transform hover:scale-105"
@@ -84,7 +84,7 @@ const Hero = () => {
                 >
                   View Our Work
                 </a>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
