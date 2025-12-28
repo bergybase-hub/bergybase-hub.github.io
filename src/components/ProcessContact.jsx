@@ -6,7 +6,7 @@ const ProcessContact = () => {
     <section id="contact" className="py-20 bg-primary-light relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-primary-dark mb-4">Our Process</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-primary-dark mb-4">OUR PROCESS</h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             From idea to launch, we guide you every step of the way.
           </p>
@@ -33,7 +33,7 @@ const ProcessContact = () => {
                 <p className="text-gray-600">Contact us via the email below and we will reach out to you within 24 hours.</p>
                 <div className="mt-4 inline-flex items-center gap-2 text-accent-blue">
                   <Mail className="h-5 w-5" />
-                  <a href="mailto:hello@bergybit.com" className="font-semibold">hello@bergybit.com</a>
+                  <a href="mailto:info@bergybitinnovations.com" className="font-semibold">info@bergybitinnovations.com</a>
                 </div>
               </div>
             </div>
@@ -45,10 +45,10 @@ const ProcessContact = () => {
               <div className="bg-white p-6 rounded-2xl shadow-md border border-gray-100">
                 <h3 className="text-xl font-bold mb-2">Schedule A Call</h3>
                 <p className="text-gray-600">Tell us about your business requirements and challenges so we can provide a tailored solution for you.</p>
-                <button className="mt-4 inline-flex items-center gap-2 px-4 py-2 bg-accent-blue text-white rounded-md font-semibold hover:bg-opacity-90">
+                {/* <button className="mt-4 inline-flex items-center gap-2 px-4 py-2 bg-accent-blue text-white rounded-md font-semibold hover:bg-opacity-90">
                   <Calendar className="h-5 w-5" />
                   Book Consultation
-                </button>
+                </button> */}
               </div>
             </div>
 
@@ -59,10 +59,10 @@ const ProcessContact = () => {
               <div className="bg-white p-6 rounded-2xl shadow-md border border-gray-100">
                 <h3 className="text-xl font-bold mb-2">Receive Estimate</h3>
                 <p className="text-gray-600">We will provide you with a full cost and delivery time breakdown within days after the initial call.</p>
-                <div className="mt-4 inline-flex items-center gap-2 text-green-600">
+                {/* <div className="mt-4 inline-flex items-center gap-2 text-green-600">
                   <CheckCircle className="h-5 w-5" />
                   <span className="font-semibold">Detailed proposal & timeline</span>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

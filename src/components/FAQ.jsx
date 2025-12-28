@@ -4,11 +4,11 @@ import { ChevronDown, ChevronUp } from 'lucide-react';
 const faqs = [
   {
     question: "What technologies do you specialize in?",
-    answer: "We specialize in modern web and mobile technologies including React, React Native, Node.js, Python, and cloud platforms like AWS and Azure."
+    answer: "We specialize in modern web and mobile technologies including React, Flutter, Node.js, Python, and cloud platforms like AWS and Azure."
   },
   {
     question: "What is your typical project timeline?",
-    answer: "Project timelines vary depending on complexity. A standard MVP typically takes 8-12 weeks, while larger enterprise solutions can take 6 months or more."
+    answer: "Project timelines vary depending on complexity. A standard MVP typically takes 4-6 weeks, while larger enterprise solutions can take 4 months or more."
   },
   {
     question: "Do you offer post-launch support?",

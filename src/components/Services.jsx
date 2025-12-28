@@ -4,7 +4,7 @@ import { Code, Smartphone, Cloud, Brain, GraduationCap } from 'lucide-react';
 const services = [
   {
     title: 'Custom Web Development',
-    description: 'Tailor-made web applications built for performance and scalability.',
+    description: 'We craft slick and dynamic websites that captivate your audience and elevate your online presence to new heights.',
     icon: <Code className="h-8 w-8 text-accent-lime" />,
     tech: [
       { name: 'React', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg' },
@@ -14,10 +14,10 @@ const services = [
   },
   {
     title: 'Mobile App Development',
-    description: 'Native and cross-platform mobile experiences that engage users.',
+    description: 'We architect intuitive user experiences, leveraging the unique capabilities offered by handheld devices.',
     icon: <Smartphone className="h-8 w-8 text-accent-blue" />,
     tech: [
-      { name: 'React Native', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg' },
+      { name: 'Flutter', logo: 'https://www.svgrepo.com/show/353751/flutter.svg' },
       { name: 'Swift', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swift/swift-original.svg' },
       { name: 'Kotlin', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg' },
     ],
@@ -33,8 +33,8 @@ const services = [
     ],
   },
   {
-    title: 'AI Solutions',
-    description: 'Machine learning and AI integrations to automate, predict, and personalize experiences.',
+    title: 'AI & ML Development',
+    description: 'Unlock the boundless potential in Natural Language Processing (NLP), computer vision, recommendation systems, anomaly detection, predictive analytics, and more.',
     icon: <Brain className="h-8 w-8 text-accent-blue" />,
     tech: [
       { name: 'Python', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg' },
@@ -43,7 +43,7 @@ const services = [
     ],
   },
   {
-    title: 'BergyBit Training',
+    title: 'Mentorship Program',
     description: 'Training programs in software development for teams and individuals.',
     icon: <GraduationCap className="h-8 w-8 text-accent-lime" />,
     tech: [
@@ -59,7 +59,7 @@ const Services = () => {
     <section id="services" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-primary-dark mb-4">Our Expertise, Your Advantage.</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-primary-dark mb-4">OUR EXPERTISE, YOUR ADVANTAGE.</h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             We leverage cutting-edge technologies to deliver world-class solutions.
           </p>

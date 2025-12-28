@@ -1,6 +1,10 @@
+import image from '../assets/logo.png';
+
+
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 
+const logo = image;
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -14,12 +18,12 @@ const Navbar = () => {
   }, []);
 
   const navLinks = [
-    { name: 'Home', href: '#home' },
-    { name: 'About', href: '#about' },
-    { name: 'Services', href: '#services' },
-    { name: 'Portfolio', href: '#portfolio' },
-    { name: 'Team', href: '#team' },
-    { name: 'Testimonials', href: '#testimonials' },
+    { name: 'HOME', href: '#home' },
+    { name: 'ABOUT', href: '#about' },
+    { name: 'SERVICES', href: '#services' },
+    { name: 'PORTFOLIO', href: '#portfolio' },
+    { name: 'TEAM', href: '#team' },
+    { name: 'TESTIMONIALS', href: '#testimonials' },
   ];
 
   return (
@@ -32,9 +36,10 @@ const Navbar = () => {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          <div className="flex-shrink-0 flex items-center">
+          <div className="flex-shrink-0 flex items-center gap-2">
+            <img src={logo} alt="Logo" className="h-8 w-8" />
             <span className={`text-2xl font-bold ${isScrolled ? 'text-primary-dark' : 'text-white'}`}>
-              BergyBit
+              Bergybit
             </span>
           </div>
           
@@ -55,7 +60,7 @@ const Navbar = () => {
               href="#contact"
               className="bg-accent-blue text-white px-4 py-2 rounded-md font-bold hover:bg-opacity-90 transition-all"
             >
-              Contact Us
+              CONTACT US
             </a>
           </div>
 

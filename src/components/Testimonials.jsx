@@ -4,18 +4,18 @@ import { ChevronLeft, ChevronRight, Star } from 'lucide-react';
 const testimonials = [
   {
     quote: "BergyBit transformed our outdated platform into a modern, high-speed application. Their attention to detail is unmatched.",
-    name: "Alex Johnson",
-    company: "TechFlow Solutions",
+    name: "Nastin Gwaza",
+    company: "Fele Express",
   },
   {
     quote: "The team was incredibly responsive and transparent throughout the entire process. We delivered on time and under budget.",
-    name: "Maria Rodriguez",
-    company: "GreenLeaf Energy",
+    name: "Daniel Tsakar",
+    company: "Value Beam LTD",
   },
   {
     quote: "Our user engagement increased by 200% after launching the new mobile app developed by BergyBit. Highly recommended!",
-    name: "Samuel Smith",
-    company: "Urban Eats",
+    name: "Audu Peter",
+    company: "Wazobia",
   },
 ];
 
@@ -33,7 +33,7 @@ const Testimonials = () => {
   return (
     <section id="testimonials" className="py-20 bg-primary-dark text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">What Our Clients Say.</h2>
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">WHAT OUR CLIENTS SAY.</h2>
         
         <div className="relative max-w-4xl mx-auto">
           <div className="overflow-hidden">
