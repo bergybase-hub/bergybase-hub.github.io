@@ -6,19 +6,19 @@ const slides = [
     subtitle: '— BERGYBIT —',
     title: 'YOUR IDEA, OUR EXPERTISE',
     description: 'We specialize in delivering  cutting-edge technology solutions tailored to your business needs.',
-    image: 'https://plus.unsplash.com/premium_photo-1682141013747-5aed8665c154?q=80&w=2232&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D ',
+    image: 'https://cdn.pixabay.com/photo/2019/05/26/07/59/handshake-4229701_1280.jpg',
   },
   {
     subtitle: '— BERGYBIT —',
     title: 'BUILDING TOMORROW, TODAY!',
     description: 'We create future-proof software solutions that keep your business ahead of the curve.',
-    image: 'https://images.unsplash.com/photo-1528901166007-3784c7dd3653?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    image: 'https://cdn.pixabay.com/photo/2016/05/26/00/19/man-1416138_1280.jpg',
   },
   {
     subtitle: '— BERGYBIT —',
     title: 'EMPOWERING GROWTH THROUGH TECHNOLOGY',
     description: 'From small startups to large enterprises, we empower  organizations to unlock their full potential through cutting-edge technology solutions.',
-    image: 'https://plus.unsplash.com/premium_photo-1707155465534-0901b76edc65?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+    image: 'https://images.unsplash.com/photo-1688380692117-63178554d76d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
   },
 ];
 const Hero = () => {
@@ -55,15 +55,15 @@ const Hero = () => {
           ></div>
           
           {/* Dark Overlay */}
-          <div className="absolute inset-0 bg-black/60"></div>
+          <div className="absolute inset-0 bg-black/40"></div>
 
           {/* Content */}
           <div className="relative h-full flex items-center justify-center text-center px-4 sm:px-6 lg:px-8">
             <div className="max-w-4xl mx-auto animate-fade-in-up">
-              <span className="block text-accent-blue font-bold text-lg md:text-xl tracking-widest mb-4 uppercase">
-                {slide.subtitle}
+              <span className="block font-bold text-lg md:text-xl tracking-widest mb-4 uppercase">
+                <span className="text-accent-blue">—</span> <span className="text-white">BERGYBIT</span> <span className="text-accent-blue">—</span>
               </span>
-              <h1 className="text-4xl sm:text-6xl md:text-7xl font-extrabold text-white tracking-tight mb-6 leading-tight">
+              <h1 className="text-4xl sm:text-6xl md:text-7xl font-black text-white tracking-tight mb-6 md:leading-normal">
                 {slide.title}
               </h1>
               <p className="text-xl sm:text-2xl text-gray-200 mb-10 max-w-2xl mx-auto">
