@@ -7,7 +7,9 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Nunito", "ui-sans-serif", "system-ui", "-apple-system", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "Noto Sans", "sans-serif"],
+        sans: ["Roboto", "ui-sans-serif", "system-ui", "-apple-system", "Segoe UI", "Helvetica Neue", "Arial", "Noto Sans", "sans-serif"],
+        heading: ["Oswald", "sans-serif"],
+        subheading: ["Oswald", "sans-serif"],
       },
       colors: {
         primary: {
@@ -16,7 +18,7 @@ export default {
         },
         accent: {
           lime: '#84cc16', // lime green
-          blue: '#1385c6', // BergyBit brand blue
+          blue: '#2258b9', // BergyBit brand blue
         }
       }
     },

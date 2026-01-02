@@ -1,74 +1,109 @@
 import React from 'react';
-import { Mail, Calendar, CheckCircle, ArrowRight } from 'lucide-react';
+import { Mail, Phone, MapPin, Send } from 'lucide-react';
+
+const steps = [
+  {
+    number: '01',
+    title: 'Discovery',
+    description: 'We start by understanding your business goals, target audience, and requirements.',
+  },
+  {
+    number: '02',
+    title: 'Strategy',
+    description: 'We develop a comprehensive plan and roadmap to ensure project success.',
+  },
+  {
+    number: '03',
+    title: 'Design & Dev',
+    description: 'Our team crafts the UI/UX and builds the solution using cutting-edge tech.',
+  },
+  {
+    number: '04',
+    title: 'Launch',
+    description: 'We deploy your product and provide ongoing support and optimization.',
+  },
+];
 
 const ProcessContact = () => {
   return (
-    <section id="contact" className="py-20 bg-primary-light relative overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="process" className="py-20 bg-gray-50">
+      {/* Process Section */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-20">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-primary-dark mb-4">OUR PROCESS</h2>
+          <h2 className="text-3xl md:text-4xl font-bold font-heading tracking-wide text-primary-dark mb-4">OUR PROCESS</h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            From idea to launch, we guide you every step of the way.
+            A proven workflow that delivers results.
           </p>
         </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {steps.map((step, index) => (
+            <div key={index} className="bg-white p-6 rounded-lg shadow-sm text-center relative overflow-hidden group hover:shadow-md transition-shadow">
+               <div className="w-12 h-12 bg-accent-blue text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4 relative z-10">
+                 {step.number}
+               </div>
+               <h3 className="text-xl font-bold font-subheading text-primary-dark mb-2 relative z-10">{step.title}</h3>
+               <p className="text-gray-600 relative z-10">{step.description}</p>
+            </div>
+          ))}
+        </div>
+      </div>
 
-        <div className="relative">
-          <svg className="absolute left-0 right-0 mx-auto top-0 w-full h-40" viewBox="0 0 1200 200" preserveAspectRatio="none">
-            <defs>
-              <linearGradient id="roadmapGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                <stop offset="0%" stopColor="#1385c6" />
-                <stop offset="100%" stopColor="#7c3aed" />
-              </linearGradient>
-            </defs>
-            <path d="M0,150 C250,50 450,220 700,130 S1000,50 1200,160" stroke="url(#roadmapGradient)" strokeWidth="14" fill="none" strokeLinecap="round" />
-          </svg>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pt-24">
-            <div className="relative">
-              <div className="absolute -top-10 left-1/2 -translate-x-1/2 w-14 h-14 rounded-full bg-white shadow-xl flex items-center justify-center border border-gray-200">
-                <span className="text-xl font-bold text-accent-blue">1</span>
-              </div>
-              <div className="bg-white p-6 rounded-2xl shadow-md border border-gray-100">
-                <h3 className="text-xl font-bold mb-2">Contact Us</h3>
-                <p className="text-gray-600">Contact us via the email below and we will reach out to you within 24 hours.</p>
-                <div className="mt-4 inline-flex items-center gap-2 text-accent-blue">
-                  <Mail className="h-5 w-5" />
-                  <a href="mailto:info@bergybitinnovations.com" className="font-semibold">info@bergybitinnovations.com</a>
+      {/* Contact Section */}
+      {/* <div id="contact" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="bg-primary-dark rounded-2xl overflow-hidden shadow-2xl">
+          <div className="grid grid-cols-1 lg:grid-cols-2">
+            <div className="p-10 text-white">
+              <h2 className="text-3xl font-bold font-heading tracking-wide mb-6">Let's Talk</h2>
+              <p className="text-gray-300 mb-8 text-lg">
+                Ready to start your next project? Contact us today.
+              </p>
+              <div className="space-y-6">
+                <div className="flex items-center gap-4">
+                  <div className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center">
+                    <Phone className="h-5 w-5 text-accent-lime" />
+                  </div>
+                  <span>+1 (555) 123-4567</span>
+                </div>
+                <div className="flex items-center gap-4">
+                  <div className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center">
+                    <Mail className="h-5 w-5 text-accent-lime" />
+                  </div>
+                  <span>hello@bergybit.com</span>
+                </div>
+                <div className="flex items-center gap-4">
+                  <div className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center">
+                    <MapPin className="h-5 w-5 text-accent-lime" />
+                  </div>
+                  <span>123 Tech Avenue, Innovation City</span>
                 </div>
               </div>
             </div>
-
-            <div className="relative">
-              <div className="absolute -top-10 left-1/2 -translate-x-1/2 w-14 h-14 rounded-full bg-white shadow-xl flex items-center justify-center border border-gray-200">
-                <span className="text-xl font-bold text-accent-blue">2</span>
-              </div>
-              <div className="bg-white p-6 rounded-2xl shadow-md border border-gray-100">
-                <h3 className="text-xl font-bold mb-2">Schedule A Call</h3>
-                <p className="text-gray-600">Tell us about your business requirements and challenges so we can provide a tailored solution for you.</p>
-                {/* <button className="mt-4 inline-flex items-center gap-2 px-4 py-2 bg-accent-blue text-white rounded-md font-semibold hover:bg-opacity-90">
-                  <Calendar className="h-5 w-5" />
-                  Book Consultation
-                </button> */}
-              </div>
-            </div>
-
-            <div className="relative">
-              <div className="absolute -top-10 left-1/2 -translate-x-1/2 w-14 h-14 rounded-full bg-white shadow-xl flex items-center justify-center border border-gray-200">
-                <span className="text-xl font-bold text-accent-blue">3</span>
-              </div>
-              <div className="bg-white p-6 rounded-2xl shadow-md border border-gray-100">
-                <h3 className="text-xl font-bold mb-2">Receive Estimate</h3>
-                <p className="text-gray-600">We will provide you with a full cost and delivery time breakdown within days after the initial call.</p>
-                {/* <div className="mt-4 inline-flex items-center gap-2 text-green-600">
-                  <CheckCircle className="h-5 w-5" />
-                  <span className="font-semibold">Detailed proposal & timeline</span>
-                </div> */}
-              </div>
+            
+            <div className="p-10 bg-white">
+              <form className="space-y-6">
+                <div>
+                  <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">Name</label>
+                  <input type="text" id="name" className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-accent-blue focus:border-transparent outline-none transition-all" placeholder="Your Name" />
+                </div>
+                <div>
+                  <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                  <input type="email" id="email" className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-accent-blue focus:border-transparent outline-none transition-all" placeholder="your@email.com" />
+                </div>
+                <div>
+                  <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                  <textarea id="message" rows="4" className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-accent-blue focus:border-transparent outline-none transition-all" placeholder="Tell us about your project..."></textarea>
+                </div>
+                <button type="submit" className="w-full bg-accent-blue text-white font-bold py-3 px-6 rounded-md hover:bg-blue-700 transition-colors duration-300 flex items-center justify-center gap-2">
+                  Send Message
+                  <Send className="h-4 w-4" />
+                </button>
+              </form>
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 };
+
 export default ProcessContact;

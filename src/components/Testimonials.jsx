@@ -33,7 +33,7 @@ const Testimonials = () => {
   return (
     <section id="testimonials" className="py-20 bg-primary-dark text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">WHAT OUR CLIENTS SAY.</h2>
+        <h2 className="text-3xl md:text-4xl font-bold font-heading tracking-wide text-center mb-16">WHAT OUR CLIENTS SAY.</h2>
         
         <div className="relative max-w-4xl mx-auto">
           <div className="overflow-hidden">
@@ -52,7 +52,7 @@ const Testimonials = () => {
                     <blockquote className="text-xl md:text-2xl font-medium text-gray-300 mb-8 italic">
                       "{testimonial.quote}"
                     </blockquote>
-                    <div className="font-bold text-white text-lg">{testimonial.name}</div>
+                    <div className="font-bold font-subheading text-white text-lg">{testimonial.name}</div>
                     <div className="text-accent-blue">{testimonial.company}</div>
                   </div>
                 </div>

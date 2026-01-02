@@ -22,7 +22,6 @@ const Navbar = () => {
     { name: 'ABOUT', href: '#about' },
     { name: 'SERVICES', href: '#services' },
     { name: 'PORTFOLIO', href: '#portfolio' },
-    { name: 'TEAM', href: '#team' },
     { name: 'TESTIMONIALS', href: '#testimonials' },
   ];
 
@@ -89,13 +88,13 @@ const Navbar = () => {
                 key={link.name}
                 href={link.href}
                 onClick={() => setIsMenuOpen(false)}
-                className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-accent-blue hover:bg-gray-100 w-full text-center"
+                className="block px-3 py-2 rounded-md text-base font-bold text-gray-700 hover:text-accent-blue hover:bg-gray-100 w-full text-center"
               >
                 {link.name}
               </a>
             ))}
             <a
-              href="#contact"
+              href="#footer"
               onClick={() => setIsMenuOpen(false)}
               className="block w-full text-center px-4 py-2 mt-4 bg-accent-blue text-white rounded-md font-bold"
             >
